@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        img{
+            
+            position:relative;
+        }
+    </style>
+    <center><img src="bird.png" id="bb"  height="100" width="100"/></center><br><br><br><br>
+    <script>
+    function md(){
+        var x=document.getElementById("bb").offsetTop;
+        x=x+200;
+        document.getElementById("bb").style.top=x+"px";
+    }
+        function mt(){
+        var x=document.getElementById("bb").offsetTop;
+        x=x-200;
+        document.getElementById("bb").style.top=x+"px";
+    }
+        function mr(){
+        var y=document.getElementById("bb").offsetLeft;
+        y=y-200;
+        document.getElementById("bb").style.left=y+"px";
+    }
+        function ml(){
+        var y=document.getElementById("bb").scrollLeft;
+        y=y+200;
+        document.getElementById("bb").style.left=y+"px";
+    }
+        
+    </script>
+    
+     <input type="button" value="down" name="dowm" onclick="md();"/>  
+    <input type="button" value="top" name="top" onclick="mt();"/>
+    <input type="button" value="right" name="top" onclick="mr();"/>
+    <input type="button" value="left" name="top" onclick="ml();"/>
+    </body>
+</html>
